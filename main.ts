@@ -1,8 +1,14 @@
 input.onButtonPressed(Button.A, function () {
     Logging = !(Logging)
     if (Logging) {
-        basic.showIcon(IconNames.Target)
-        music.playSoundEffect(music.builtinSoundEffect(soundExpression.spring), SoundExpressionPlayMode.UntilDone)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . # . .
+            . . . . .
+            . . . . .
+            `)
+        music.playSoundEffect(music.builtinSoundEffect(soundExpression.hello), SoundExpressionPlayMode.UntilDone)
     } else {
         basic.clearScreen()
     }
