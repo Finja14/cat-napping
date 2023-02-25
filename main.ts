@@ -15,7 +15,7 @@ input.onButtonPressed(Button.A, function () {
 })
 let Logging = false
 Logging = false
-loops.everyInterval(60000, function () {
+loops.everyInterval(600000, function () {
     if (Logging) {
         datalogger.log(datalogger.createCV("Temp", input.temperature()))
         datalogger.log(datalogger.createCV("Light", input.lightLevel()))
